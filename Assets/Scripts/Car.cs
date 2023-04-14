@@ -27,7 +27,12 @@ public class Car : MonoBehaviour
         else if (Input.GetKey(KeyCode.D))
         {
             
-            position.z += step;
+            position.x += step;
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            
+            position.x -= step;
         }
 
         transform.position = position;
